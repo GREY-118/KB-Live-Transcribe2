@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Caption Overlay</string>
+    <string name="tagline">Live subtitles for whatever your mic hears — over any app.</string>
+
+    <string name="perm_mic_title">1. Microphone access</string>
+    <string name="perm_mic_desc">Needed to listen to ambient audio and generate captions.</string>
+    <string name="perm_mic_grant">Grant microphone permission</string>
+    <string name="perm_mic_granted">Microphone: granted</string>
+
+    <string name="perm_overlay_title">2. Draw over other apps</string>
+    <string name="perm_overlay_desc">Needed to show the floating subtitle bar on top of any app.</string>
+    <string name="perm_overlay_grant">Grant overlay permission</string>
+    <string name="perm_overlay_granted">Overlay: granted</string>
+
+    <string name="language_label">Recognition language</string>
+
+    <string name="start_captioning">Start captioning</string>
+    <string name="stop_captioning">Stop captioning</string>
+
+    <string name="notif_channel_name">Live captioning</string>
+    <string name="notif_title">Caption Overlay is listening</string>
+    <string name="notif_text">Tap the bubble menu to pause, resize, or stop.</string>
+    <string name="notif_stop">Stop</string>
+
+    <string name="menu_mic_on">Pause mic</string>
+    <string name="menu_mic_off">Resume mic</string>
+    <string name="menu_font">Font size</string>
+    <string name="menu_language">Language</string>
+    <string name="menu_opacity">Opacity</string>
+    <string name="menu_close">Close</string>
+
+    <string name="subtitle_placeholder">Listening…</string>
+</resources>
