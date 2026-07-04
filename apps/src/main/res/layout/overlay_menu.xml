@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="end"
+    android:padding="4dp">
+
+    <ImageButton
+        android:id="@+id/btnMainFab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_fab"
+        android:elevation="8dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_mic"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/subMenuContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Toggle mic on/off -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelToggleMic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_subtitle_bubble"
+                android:text="@string/menu_mic_on"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/btnToggleMic"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_menu_item"
+                android:padding="10dp"
+                android:src="@drawable/ic_mic_off"
+                android:contentDescription="@string/menu_mic_on" />
+        </LinearLayout>
+
+        <!-- Font size -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_subtitle_bubble"
+                android:text="@string/menu_font"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/btnFontSize"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_menu_item"
+                android:padding="10dp"
+                android:src="@drawable/ic_font_size"
+                android:contentDescription="@string/menu_font" />
+        </LinearLayout>
+
+        <!-- Language -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_subtitle_bubble"
+                android:text="@string/menu_language"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/btnLanguage"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_menu_item"
+                android:padding="10dp"
+                android:src="@drawable/ic_language"
+                android:contentDescription="@string/menu_language" />
+        </LinearLayout>
+
+        <!-- Opacity -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_subtitle_bubble"
+                android:text="@string/menu_opacity"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/btnOpacity"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_menu_item"
+                android:padding="10dp"
+                android:src="@drawable/ic_opacity"
+                android:contentDescription="@string/menu_opacity" />
+        </LinearLayout>
+
+        <!-- Close -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_subtitle_bubble"
+                android:text="@string/menu_close"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_menu_item"
+                android:padding="10dp"
+                android:src="@drawable/ic_close"
+                android:contentDescription="@string/menu_close" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
